@@ -1,0 +1,300 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'BioRhyme', serif;
+    font-size: 20px;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+#wrapper {
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 10px;
+    transition: background .9s ease-in-out .9s;
+    background: tan;
+}
+
+#homePage {
+    max-width: 700px;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0 0 50px 5px rgb(48, 47, 47);
+}
+
+#aboutPage {
+    max-width: 700px;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0 0 50px 5px rgb(48, 47, 47);
+    text-align: left;
+}
+
+#profilePic {
+    margin-top: 5px;
+    max-width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.aboutLinks {
+    color: navajowhite;
+}
+
+.aboutLinks:hover {
+    color: navy;
+}
+
+.container {
+    text-align: left;
+    position: relative;
+    max-width: 700px;
+}
+
+.projectTitles {
+    color: orange;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.viewSiteContainer {
+    position: absolute;
+    transform: translateY(-125%);
+}
+
+#viewSite {
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.projectImagesCover {
+    filter: grayscale(75%);
+    top: 0;
+    max-width: 100%;
+}
+
+.span {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#projectsPage {
+    max-width: 700px;
+    padding: 5px 5px 10px 5px;
+    box-shadow: 0 0 50px 5px rgb(48, 47, 47);
+    color: white;
+}
+
+#contactPage {
+    max-width: 700px;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0 0 50px 5px rgb(48, 47, 47);
+}
+
+#certsPage {
+    max-width: 700px;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0 0 50px 5px rgb(48, 47, 47);
+    opacity: 0.979;
+    color: lightgrey;
+}
+
+#certList li a {
+    text-decoration: none;
+    color: navajowhite;
+}
+
+body.fixed-nav #wrapper {
+    transform: scale(1);
+}
+
+#images {
+    transition: background-image .7s ease .7s;
+}
+
+header {
+    background-image: url('pic1.jpg');
+    text-align: center;
+    height: 45vh;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 20%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 0% 100%, 700% 0%, 0% 0%);
+}
+
+#footer {
+    font-size: 15px;
+    background-color: black;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 35px;
+    color: white;
+    clip-path: polygon(0% 60%, 100% 0, 100% 100%, 0 100%);
+    background-image: linear-gradient(black, grey);
+    opacity: .5;
+}
+
+#contactIcons {
+    text-align: center;
+    display: block;
+}
+
+#contactIcons a {
+    text-decoration: none;
+    color: white;
+}
+
+#contactIcons a:active {
+    color: blue;
+}
+
+#contactIcons a:visited {
+    color: purple;
+}
+
+#contactIcons a:hover {
+    color: blue;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.596);
+    margin-top: 0%;
+}
+
+#navBar {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 30%);
+    background: tan;
+    transition: background .9s ease-in-out .9s;
+    top: 0;
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: .8;
+    font-weight: bold;
+}
+
+body.fixed-nav #navBar {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    padding: 0;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 50px;
+    flex: 1;
+    display: flex;
+}
+
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+li.logo a {
+    padding-top: 4px;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    padding: .8vh;
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header {
+        height: 30vh;
+        background-attachment: scroll;
+        background-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #navBar {
+        clip-path: none;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    nav li {
+        padding: 0;
+        font-size: 10px;
+        margin-top: -2px;
+        margin-left: 0;
+        flex: 1;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    li.logo a {
+        font-size: 5px;
+        padding-right: 1px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #wrapper {
+        margin: auto;
+        box-shadow: none;
+        margin: 10px 7px 5px 7px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.596);
+    }
+}

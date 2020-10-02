@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Janelle's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="me.jpg" alt="profile picture">
+</head>
+
+<body>
+    <header id="images" tabindex="-1">
+        <h1>janelle's portfolio</h1>
+    </header>
+    <nav id="navBar">
+        <ul>
+            <li class="logo"><a href="#">janelle's portfolio</li>
+            <li><a id="home" href="#/home" onclick=homePageClicked()>HOME</a></li>
+            <li><a id="about" href="#/about" onclick=aboutPageClicked()>ABOUT</a></li>
+            <li><a id="projects" href="#/projects" onclick=projectsPageClicked()>PROJECTS</a></li>
+            <li><a id="contact" href="#/contact" onclick=contactPageClicked()>CONTACT</a></li>
+            <li><a id="certs" href="#/certs" onclick=certsPageClicked()>CERTS</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <div id="homePage">
+            <h1>Welcome to my portfolio site!</h1>
+            <p> This site was built with HTML, CSS and JavaScript. It was created to help recruiters and visitors
+                easily navigate through my programming experience and certifications. It also serves to showcase
+                a few projects I have a built as well as share useful information about me and how to best get in
+                touch.
+                <!-- It is home to information and projects as well as the best ways to contact me.</p> -->
+            <p>If you would like to learn a little about me and my coding journey, you can head over to my About page
+                for a brief history.</p>
+            <p>Just want to see some cool projects? Click the Projects page tab and it will guide you through six
+                various projects I have built. From here you can
+                either look at the live hosted projects or view the code - or both!
+            </p>
+            <p>If you would like to get in touch with me, my Contact page provides 3 ways to reach out. I am highly
+                responsive and will reply back to any messages very soon.
+            </p>
+            <p>On my Certs page, you can view credentials I have earned through both Codecademy and Harvard's online
+                curriculums.</p>
+            <br>
+        </div>
+
+        <div id="aboutPage">
+            <div>
+                <img id="profilePic" src="me.jpg" alt="profile picture">
+            </div>
+            <p>Welcome to my About page! My name is Janelle and I’m a front-end web developer living in Austin, TX. </p>
+            <p>I am knowledgeable in HTML, CSS/SASS, JavaScript, single page application (SPA) frameworks (e.g. React),
+                Git version control and
+                Node.js/npm.</p>
+            <p> I am a self-taught developer with a range of educational experiences. Over the past year, I have clocked
+                hundreds of hours across the Codecademy and Udemy platforms as well as having completed
+                Harvard’s 8 week CS50 course (you can view the certificate for that course and more on my Certs page).
+                <!-- (<a class="aboutLinks" href="CS50.png" alt="Harvard's CS50 certificate of completion"
+                    target="_blank">View Certificate 🔎</a>)-->
+                As the final
+                project for that course, my team built a Google Chrome extension which is currently available on the
+                Chrome Web Store. I am currently completing a second 8 week Harvard course as
+                part of a larger certificate, Computer Science for Web Programming. I also took on and completed the
+                Javascript
+                30 challenge (javascript30.com) where I built 30 vanilla Javascript apps in 30 days. All of these
+                projects (and more!)
+                can be found on my <a class="aboutLinks" href="https://github.com/JanelleLesley">GitHub</a>, while some
+                are featured here on my
+                site on the Projects page.</p>
+            <p>Prior to becoming a programmer, I earned a degree in business followed by a variety of work experiences
+                in retail
+                management, healthcare and most recently at a FinTech startup.
+                This varied background reflects my
+                learning mindset and provides me with a well-rounded perspective suited to any dynamic team.</p>
+            <p>I am an apt learner of new technologies who understands the value of time-boxing and writing readable
+                code. I am also passionate about delivering
+                user-friendly application interfaces through aesthetic and responsive designs and have an eye for
+                detail.</p>
+            <p>Please visit my Contact page if you wish to get in touch with me. I look forward to hearing from you.
+                Cheers!</p>
+        </div>
+
+        <div id="projectsPage">
+            <p>Welcome to my Projects page! Click on a project to view it live or click below it to view the code on
+                GitHub.
+                Enjoy!</p>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"Jammin."</div>
+                <a href="http://invincible-brick.surge.sh/" target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/jammin.PNG"
+                        alt="link to live demo of this project">
+                </a>
+                <div class="viewSiteContainer">
+                    <a id="viewSite" href="http://invincible-brick.surge.sh/" target="_blank">View Site 🔎</a>
+                </div>
+                <span class="span">This project... </span>is a React app which allows the user to interface with
+                the Spotify API to login and add newly created playlists to their Spotify account.
+                <span class="span">Built with... </span>HTML, CSS, JS, React, API Integration
+                <a class="span" href="https://github.com/JanelleLesley/jammin" target="_blank">View code
+                    🔎</a>
+            </div>
+
+
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"Ravenous"</div>
+                <a href="http://obedient-steel.surge.sh/" target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/ravenous.PNG"
+                        alt="link to live demo of this project">
+                </a>
+                <div class="viewSiteContainer">
+                    <a id="viewSite" href="http://obedient-steel.surge.sh/" target="_blank">View Site 🔎</a>
+                </div>
+                <span class="span">This project... </span>is a React app which allows users to interact with the Yelp
+                API to easily search for food options based on type and location
+
+                <span class="span">Built with... </span>HTML, CSS, JS, React, API Integration
+                <div>
+                    <a class="span" href="https://github.com/JanelleLesley/ravenous" target="_blank">View code
+                        🔎</a>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"Cat Party!"</div>
+
+                <a href="https://chrome.google.com/webstore/detail/cat-party%F0%9F%98%BB%F0%9F%8E%89%F0%9F%90%88%F0%9F%A5%B3%F0%9F%98%B9/ggkedpioohgmaanpifhldbboibljkdmp"
+                    target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/cat-party.PNG"
+                        alt="link to live demo of this project">
+                </a>
+                <div class="viewSiteContainer">
+                    <a id="viewSite"
+                        href="https://chrome.google.com/webstore/detail/cat-party%F0%9F%98%BB%F0%9F%8E%89%F0%9F%90%88%F0%9F%A5%B3%F0%9F%98%B9/ggkedpioohgmaanpifhldbboibljkdmp"
+                        target="_blank">View Site 🔎<span style="font-weight: lighter; font-size: 14px;">(Chrome
+                            exstension)</span></a>
+                </div>
+
+                <span class="span">This project... </span>is a fun Google Chrome extension available for free
+                download from the Chrome webstore.
+                With one simple click, transform any website into a radical cat party!
+                <span class="span">Built with... </span>HTML, CSS, JS
+                <a class="span" href="https://github.com/JanelleLesley/cat-party" target="_blank">View code
+                    🔎</a>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"Clairvoyage"</div>
+                <a href="https://clairvoyage.netlify.app/" target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/clairvoyage.PNG"
+                        alt="link to live demo of this project">
+                </a>
+                <div class="viewSiteContainer">
+                    <a id="viewSite" href="https://clairvoyage.netlify.app/" target="_blank">View Site 🔎</a>
+                </div>
+                <div>
+                    <span class="span">This project...</span>is a travel app which
+                    creates a user friendly interface to
+                    interact with endpoints from
+                    Foursquare and OpenWeather API's.
+                    <span class="span">Built with... </span>HTML, CSS, JS, API Integration
+                    <a class="span" href="https://github.com/JanelleLesley/clairvoyage" target="_blank">View code
+                        🔎</a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"Magic 8 Ball"</div>
+                <a href="https://magick8ball.netlify.app/" target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/magic-8-ball.PNG"
+                        alt="link to live demo of this project">
+                </a>
+                <div class="viewSiteContainer">
+                    <a id="viewSite" href="https://magick8ball.netlify.app/" target="_blank" style="color: white">View
+                        Site 🔎</a>
+                </div>
+                <span class="span">This project... </span>is a fun take on the classic magic 8 ball game built with JS
+                conditionals and math functions
+                <span class="span">Built with... </span>HTML, CSS, JS
+                <a class="span" href="https://github.com/JanelleLesley/magic-8-ball" target="_blank">View code
+                    🔎</a>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="projectTitles">"JS 30 Clock"</div>
+                <a href="https://jl-clock.netlify.app/" target="_blank">
+                    <img class="projectImagesCover" src="project-tiles/clock.PNG"
+                        alt="link to live demo of this project">
+                </a>
+
+                <div class="viewSiteContainer">
+                    <a id="viewSite" href="https://jl-clock.netlify.app/" target="_blank">View Site 🔎</a>
+                </div>
+                <span class="span">This project... </span> is 1 of 30 vanilla JavaScript projects done for the
+                Javascript 30 challenge. This project features a JS clock built with time and animation functions
+                <span class="span">Built with... </span>HTML, CSS, JS
+                <a class="span" href="https://github.com/JanelleLesley/Javascript30" target="_blank">View code
+                    🔎</a>
+
+
+            </div>
+        </div>
+
+        <div id="contactPage">
+            <h1>Contact :</h1>
+            <br>
+
+            <div id="contactIcons">
+
+                <a href="mailto:jale149@yahoo.com" target="_blank">
+                    <i class="fa fa-envelope" style="font-size:48px;color:orange;"></i>
+                    <p>jale149@yahoo.com</p>
+                </a>
+                <br>
+                <br>
+
+                <a href="https://www.linkedin.com/in/JanelleLesley" target="_blank">
+                    <i class="fa fa-linkedin-square" style="font-size:48px;color:orange"></i>
+                    <p>LinkedIn/JanelleLesley</p>
+                </a>
+                <br>
+                <br>
+                <a href="https://github.com/JanelleLesley" target="_blank">
+                    <i class="fa fa-github" style="font-size:48px;color:orange"></i>
+                    <p>GitHub/JanelleLesley</p>
+                </a>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div id="certsPage">
+            <div>
+                <h1>Certs:</h1>
+                <ul id="certList">
+                    <p>
+                        <li>HTML - <a href="html-cert.pdf" target="_blank">View Cert 🔎</a></li>
+                    </p>
+                    <br>
+                    <p>
+                        <li>CSS - <a href="css-cert.pdf" target="_blank">View Cert 🔎</a></li>
+                    </p>
+                    <br>
+                    <p>
+                        <li>JavaScript - <a href="javascript-cert.pdf" target="_blank">View Cert 🔎</a></li>
+                    </p>
+                    <br>
+                    <p>
+                        <li>React - <a href="react-cert.pdf" target="_blank">View Cert 🔎</a></li>
+                    </p>
+                    <br>
+                    <p>
+                        <li>Web Development - <a href="web-development-cert.pdf" target="_blank">View Cert 🔎</a></li>
+                    </p>
+                    <br>
+                    <p>
+                        <li>Harvard's CS50 - <a href="CS50.png" target="_blank"
+                                alt="link to live demo of this project">View Cert 🔎</a></li>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Janelle Lesley &copy; 2020</p>
+    </div>
+    <script src="portfolio-script.js"></script>
+</body>
+
+</html>
