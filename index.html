@@ -33,17 +33,25 @@
                 easily navigate through my programming experience and certifications. It also serves to showcase
                 a few projects I have a built as well as share useful information about me and how to best get in
                 touch.
-                <!-- It is home to information and projects as well as the best ways to contact me.</p> -->
-            <p>If you would like to learn a little about me and my coding journey, you can head over to my About page
+            <p>If you would like to learn a little about me and my coding journey, you can head over to my
+                <a href="#about" onclick=aboutPageClicked()>About page</a>
                 for a brief history.</p>
-            <p>Just want to see some cool projects? Click the Projects page tab and it will guide you through six
-                various projects I have built. From here you can
+            <p>Just want to see some cool projects? Click the
+                <a href="#projects" onclick=projectsPageClicked()>Projects page</a>
+                tab and it will guide you through several
+                featured
+                various projects I have built. From there you can
                 either look at the live hosted projects or view the code - or both!
             </p>
-            <p>If you would like to get in touch with me, my Contact page provides 3 ways to reach out. I am highly
-                responsive and will reply back to any messages very soon.
+            <p>If you would like to get in touch with me, my
+                <a href="#contact" onclick=contactPageClicked()>Contact page</a>
+                provides multiple ways to reach out. I am
+                highly
+                responsive and will reply back to any messages promptly.
             </p>
-            <p>On my Certs page, you can view credentials I have earned through both Codecademy and Harvard's online
+            <p>On my
+                <a href="#certs" onclick=certsPageClicked()>Certs page</a>,
+                you can view credentials I have earned through both Codecademy and Harvard's online
                 curriculums.</p>
             <br>
         </div>
@@ -52,40 +60,48 @@
             <div>
                 <img id="profilePic" src="me.jpg" alt="profile picture">
             </div>
-             <p>Welcome to my About page! My name is Janelle and I’m a front-end web developer living in Austin, TX.</p>
+            <p>Welcome to my About page! My name is Janelle and I’m a front-end web developer living in Austin, TX.</p>
             <p>I am knowledgeable in HTML, CSS/SASS, JavaScript, single page application (SPA) frameworks (e.g. React),
                 Git version control and
                 Node.js/npm.</p>
             <p> I am a self-taught developer with a range of educational experiences. Over the past year, I have clocked
-                hundreds of hours across the Codecademy and Udemy platforms as well as having completed
-                Harvard’s 8 week CS50 course (you can view the certificate for that course and more on my Certs page).
-                <!-- (<a class="aboutLinks" href="CS50.png" alt="Harvard's CS50 certificate of completion"
-                    target="_blank">View Certificate 🔎</a>)-->
+                hundreds of hours across the Codecademy and Udemy platforms. In addition, I have completed
+                Harvard’s 8 week CS50 course (you can view the certificate for that course and more on my
+                <a href="#certs" onclick=certsPageClicked()>Certs page</a>).
                 As the final
                 project for that course, my team built a Google Chrome extension which is currently available on the
-                Chrome Web Store. I am currently completing a second 8 week Harvard course as
-                part of a larger certificate, Computer Science for Web Programming. I also took on and completed the
-                Javascript
-                30 challenge (javascript30.com) where I built 30 vanilla Javascript apps in 30 days. All of these
+                Chrome Web Store. I also took on and completed the
+                JavaScript
+                30 challenge from javascript30.com, where I built 30 vanilla JavaScript apps in 30 days. All of these
                 projects (and more!)
                 can be found on my <a class="aboutLinks" href="https://github.com/JanelleLesley">GitHub</a>, while some
                 are featured here on my
-                site on the Projects page.</p>
+                site on the
+                <a href="#projects" onclick=projectsPageClicked()>Projects page</a>.
+                At present, I am enrolled to complete a second 8 week Harvard course as
+                part of a larger certificate, "Computer Science for Web Programming".</p>
             <p>Prior to becoming a programmer, I earned a degree in business followed by a variety of work experiences
                 in retail
-                management, healthcare and most recently at a FinTech startup.
+                management, healthcare and most recently, FinTech. While working at a FinTech startup, I functioned as a
+                bridge between clients and in-house technical
+                teams and developers. During this time, I was tasked with debugging the existing markup language used to
+                structure interfaces for corporate email.
+                This fortuitous encounter with HTML further inspired me on my journey to becoming the web
+                developer I am today.
                 This varied background reflects my
                 learning mindset and provides me with a well-rounded perspective suited to any dynamic team.</p>
             <p>I am an apt learner of new technologies who understands the value of time-boxing and writing readable
                 code. I am also passionate about delivering
                 user-friendly application interfaces through aesthetic and responsive designs and have an eye for
                 detail.</p>
-            <p>Please visit my Contact page if you wish to get in touch with me. I look forward to hearing from you.
+            <p>Please visit my
+                <a href="#contact" onclick=contactPageClicked()>Contact page</a>
+                if you wish to get in touch with me. I look forward to hearing from you.
                 Cheers!</p>
         </div>
 
         <div id="projectsPage">
-            <p>Welcome to my Projects page! Click on a project to view it live or click below it to view the code on
+            <p>Welcome to my Projects page! Click on an image to view it live or click below it to view the code on
                 GitHub.
                 Enjoy!</p>
             <br>
@@ -121,7 +137,7 @@
                     <a id="viewSite" href="http://obedient-steel.surge.sh/" target="_blank">View Site 🔎</a>
                 </div>
                 <span class="span">This project... </span>is a React app which allows users to interact with the Yelp
-                API to easily search for food options based on type and location
+                API to easily search for food options based on type and location.
 
                 <span class="span">Built with... </span>HTML, CSS, JS, React, API Integration
                 <div>
@@ -173,8 +189,8 @@
                 <div>
                     <span class="span">This project...</span>is a travel app which
                     creates a user friendly interface to
-                    interact with endpoints from
-                    Foursquare and OpenWeather API's.
+                    interact with API endpoints from both
+                    Foursquare and OpenWeather.
                     <span class="span">Built with... </span>HTML, CSS, JS, API Integration
                     <a class="span" href="https://github.com/JanelleLesley/clairvoyage" target="_blank">View code
                         🔎</a>
@@ -194,8 +210,9 @@
                     <a id="viewSite" href="https://magick8ball.netlify.app/" target="_blank" style="color: white">View
                         Site 🔎</a>
                 </div>
-                <span class="span">This project... </span>is a fun take on the classic magic 8 ball game built with JS
-                conditionals and math functions
+                <span class="span">This project... </span>is a fun take on the classic magic 8 ball game that showcases
+                the power of conditional
+                statements and math functions.
                 <span class="span">Built with... </span>HTML, CSS, JS
                 <a class="span" href="https://github.com/JanelleLesley/magic-8-ball" target="_blank">View code
                     🔎</a>
@@ -214,12 +231,13 @@
                 <div class="viewSiteContainer">
                     <a id="viewSite" href="https://jl-clock.netlify.app/" target="_blank">View Site 🔎</a>
                 </div>
-                <span class="span">This project... </span> is 1 of 30 vanilla JavaScript projects done for the
-                Javascript 30 challenge. This project features a JS clock built with time and animation functions
+                <span class="span">This project... </span> is 1 of 30 vanilla JavaScript projects completed as part of
+                the
+                "JavaScript 30 challenge". This project features an operating clock face powered by JS time and animation
+                functions.
                 <span class="span">Built with... </span>HTML, CSS, JS
                 <a class="span" href="https://github.com/JanelleLesley/Javascript30" target="_blank">View code
                     🔎</a>
-
 
             </div>
         </div>
