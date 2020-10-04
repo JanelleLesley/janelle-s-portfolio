@@ -254,12 +254,13 @@ nav li {
     padding: 0;
     font-size: 15px;
     margin-top: -10px;
-    margin-left: 50px;
+    margin-left: 45px;
     flex: 1;
     display: flex;
 }
 
 li.logo {
+    white-space: nowrap; 
     max-width: 0;
     overflow: hidden;
     transition: all 0.5s;
